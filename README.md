@@ -19,5 +19,5 @@ $ ./build.sh
 $ ./sandSim
 ```
 
-> Note: The Linux version is not verified since I only have windows
+> Note: The Linux version is not verified since I only have windows.
 > I will not go through the effort of installing raylib on wsl or a vm, copying the repo and verifying

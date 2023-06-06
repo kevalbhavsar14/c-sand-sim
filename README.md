@@ -2,6 +2,7 @@
 
 ## Quick start
 Raylib required to compile
+Install raylib from [here](https://www.raylib.com/)
 
 ### Windows
 Change INCLUDE_PATH and LIBRARY_PATH for your raylib installation in build.bat

@@ -258,7 +258,9 @@ void updateCells()
                 for (int j = 0; j < cellRules[cells[y + dir.y][x + dir.x]].displaceDirsCount; j++)
                 {
                     Vector2Int displaceDir = cellRules[cells[y + dir.y][x + dir.x]].displaceDirs[j];
-                    if (cells[y + dir.y + displaceDir.y][x + dir.x + displaceDir.x] == CELLTYPE_AIR)
+                    if (0 <= x + dir.x + displaceDir.x && x + dir.x + displaceDir.x < WIDTH &&
+                        0 <= y + dir.y + displaceDir.y && y + dir.y + displaceDir.y < HEIGHT &&
+                        cells[y + dir.y + displaceDir.y][x + dir.x + displaceDir.x] == CELLTYPE_AIR)
                     {
                         cells[y + dir.y + displaceDir.y][x + dir.x + displaceDir.x] = temp;
                         break;

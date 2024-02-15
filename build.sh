@@ -1,5 +1,5 @@
-INCLUDE_PATH="C:\raylib\raylib\src"
-LIBRARY_PATH="C:\raylib\raylib\src"
+INCLUDE_PATH="your_raylib_path"
+LIBRARY_PATH="your_raylib_path"
 CFLAGS="-O3 -Wall -Werror -Wextra"
-LIBS="-lraylib -lopengl32 -lgdi32 -lwinmm"
+LIBS="-lraylib -lm" # add neccessary libs since this is not tested
 gcc sandSim.c $CFLAGS -o sandSim -I $INCLUDE_PATH -L $LIBRARY_PATH $LIBS
